@@ -1,0 +1,31 @@
+{
+    "name": "atoum/telemetry-extension",
+    "type": "library",
+    "description": "atoum telemetry reports extension",
+    "keywords": ["TDD","atoum","test","unit testing","reports", "telemetry"],
+    "homepage": "http://www.atoum.org",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "jubianchi",
+            "email": "contact@jubianchi.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "atoum/atoum": "^2.5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "mageekguy\\atoum\\reports\\": "classes"
+        },
+        "files": ["autoloader.php"]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        }
+    }
+}
