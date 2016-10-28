@@ -1,6 +1,6 @@
 <?php
 
-namespace mageekguy\atoum\reports;
+namespace mageekguy\atoum\telemetry;
 
 use mageekguy\atoum;
 use mageekguy\atoum\reports\asynchronous;

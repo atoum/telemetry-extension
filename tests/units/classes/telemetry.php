@@ -1,10 +1,10 @@
 <?php
 
-namespace mageekguy\atoum\reports\tests\units;
+namespace mageekguy\atoum\telemetry\tests\units;
 
 use
 	mageekguy\atoum,
-	mageekguy\atoum\reports\telemetry as testedClass
+	mageekguy\atoum\telemetry\telemetry as testedClass
 ;
 
 class telemetry extends atoum\test
@@ -189,7 +189,7 @@ class telemetry extends atoum\test
 				$this->function->getenv = false
 			)
 			->if(
-				$this->testedInstance->setProjectName('atoum/reports-extension'),
+				$this->testedInstance->setProjectName('atoum/telemetry-extension'),
 				$this->testedInstance->sendAnonymousProjectName()
 			)
 			->when($this->testedInstance->handleEvent(atoum\runner::runStop, $runner))
@@ -201,7 +201,7 @@ class telemetry extends atoum\test
 					'arch' => php_uname('m'),
 					'environment' => 'unknown',
 					'vendor' => 'atoum',
-					'project' => 'anon-' . md5('atoum/reports-extension'),
+					'project' => 'anon-' . md5('atoum/telemetry-extension'),
 					'metrics' => [
 						'classes' => 0,
 						'methods' => [

@@ -17,11 +17,15 @@
     "require-dev": {
         "atoum/atoum": "^2.5.1"
     },
+    "minimum-stability": "beta",
     "autoload": {
         "psr-4": {
-            "mageekguy\\atoum\\reports\\": "classes"
+            "mageekguy\\atoum\\telemetry\\": "classes"
         },
-        "files": ["autoloader.php"]
+        "files": [
+            "autoloader.php",
+            "configuration.php"
+        ]
     },
     "extra": {
         "branch-alias": {
