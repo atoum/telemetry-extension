@@ -9,7 +9,7 @@ Install extension using [composer](https://getcomposer.org):
 ```json
 {
     "require-dev": {
-        "atoum/reports-extension": "~1.0"
+        "atoum/telemetry-extension": "~1.0"
     }
 }
 
@@ -32,8 +32,6 @@ $extension->addToRunner($runner);
 ```
 
 ## Use it
-
-### Telemetry report
 
 The telemetry report allow us to collect metrics from your test suites. If you want to help us improve atoum, please send us your reports.
 
