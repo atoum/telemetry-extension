@@ -2,7 +2,7 @@
     "name": "atoum/telemetry-extension",
     "type": "library",
     "description": "atoum telemetry reports extension",
-    "keywords": ["TDD","atoum","test","unit testing","reports", "telemetry"],
+    "keywords": ["TDD", "atoum", "test", "unit testing", "reports", "telemetry", "atoum-extension"],
     "homepage": "http://www.atoum.org",
     "license": "BSD",
     "authors": [
