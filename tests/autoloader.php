@@ -1,6 +1,6 @@
 <?php
 
-namespace mageekguy\atoum\reports\tests;
+namespace mageekguy\atoum\telemetry\tests;
 
 use mageekguy\atoum;
 

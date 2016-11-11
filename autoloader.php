@@ -1,5 +1,5 @@
 <?php
-namespace mageekguy\atoum\reports;
+namespace mageekguy\atoum\telemetry;
 
 use mageekguy\atoum;
 
@@ -8,7 +8,6 @@ $directories = [
 	__DIR__ . DIRECTORY_SEPARATOR . '../..'
 ];
 $vendorDir = null;
-
 
 foreach ($directories as $directory)
 {
@@ -28,7 +27,6 @@ if ($vendorDir === null)
 atoum\autoloader::get()
 	->addNamespaceAlias('atoum\reports', __NAMESPACE__)
 	->addDirectory(__NAMESPACE__, __DIR__ . DIRECTORY_SEPARATOR . 'classes')
-	->addDirectory('Symfony\Component\Filesystem', $filesystemDir)
 ;
 
 require_once __DIR__ . DIRECTORY_SEPARATOR .'tests' . DIRECTORY_SEPARATOR . 'autoloader.php';
