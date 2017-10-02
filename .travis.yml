@@ -16,6 +16,7 @@ env:
   matrix:
     - COMPOSER_PREFER="--prefer-stable"
     - COMPOSER_PREFER="--prefer-lowest"
+    - COMPOSER_PREFER=
 
 before_script:
   - php -v
