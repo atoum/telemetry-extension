@@ -12,13 +12,14 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "atoum/atoum": "^2.9 || ^3.0"
     },
     "conflict": {
         "atoum/reports-extension": "<3.0.0"
     },
     "require-dev": {
-        "atoum/atoum": "^2.9 || ^3.0"
+        "friendsofphp/php-cs-fixer": "^2"
     },
     "minimum-stability": "beta",
     "autoload": {
