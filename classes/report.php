@@ -5,7 +5,7 @@ namespace mageekguy\atoum\telemetry;
 use mageekguy\atoum;
 use mageekguy\atoum\reports\asynchronous;
 
-class telemetry extends asynchronous
+class report extends asynchronous
 {
 	const defaultUrl = 'https://telemetry.atoum.org';
 

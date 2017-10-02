@@ -9,27 +9,13 @@ Install extension using [composer](https://getcomposer.org):
 ```json
 {
     "require-dev": {
-        "atoum/telemetry-extension": "~1.0"
+        "atoum/telemetry-extension": "^1.0"
     }
 }
 
 ```
 
-Enable the extension using atoum configuration file:
-
-```php
-<?php
-
-// .atoum.php
-
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
-
-use mageekguy\atoum\telemetry;
-
-$extension = new telemetry\extension($script);
-
-$extension->addToRunner($runner);
-```
+The extension will then be autoloaded by atoum, the only thing you will have to do is to configure the report.
 
 ## Use it
 
@@ -42,13 +28,13 @@ To enable the telemetry report, add the following code to your configuration fil
 
 // .atoum.php
 
-use mageekguy\atoum\reports;
+use mageekguy\atoum\telemetry;
 use mageekguy\atoum\reports\telemetry;
 use mageekguy\atoum\writers\std;
 
 $script->addDefaultReport();
 
-$telemetry = new telemetry();
+$telemetry = new telemetry\report();
 $telemetry->addWriter(new std\out());
 $runner->addReport($telemetry);
 ```
