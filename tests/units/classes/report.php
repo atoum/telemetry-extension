@@ -4,10 +4,10 @@ namespace mageekguy\atoum\telemetry\tests\units;
 
 use
 	mageekguy\atoum,
-	mageekguy\atoum\telemetry\telemetry as testedClass
+	mageekguy\atoum\telemetry\report as testedClass
 ;
 
-class telemetry extends atoum\test
+class report extends atoum\test
 {
 	public function testClass()
 	{
