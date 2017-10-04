@@ -29,7 +29,6 @@ To enable the telemetry report, add the following code to your configuration fil
 // .atoum.php
 
 use mageekguy\atoum\telemetry;
-use mageekguy\atoum\reports\telemetry;
 use mageekguy\atoum\writers\std;
 
 $script->addDefaultReport();
@@ -41,6 +40,19 @@ $runner->addReport($telemetry);
 
 Now, each time your run your test suite, atoum will collect data and send them to the telemetry. By default, **everything is
 sent anonymously**: a random project name will be generated and we'll only collect metrics. 
+
+If you got a message telling you it cannot find the `report` class; try to include the autoloader (example below assumes your vendor dir is at the same level as your configuration file):
+
+```php
+<?php
+
+// .atoum.php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use mageekguy\atoum\telemetry;
+//[...]
+```
 
 If you want to let us know who you are, add the following lines to your configuration file:
 
@@ -64,4 +76,3 @@ you want to keep the latter secret so we only collect the vendor name, you can a
 
 $telemetry->sendAnonymousProjectName();
 ```
-
