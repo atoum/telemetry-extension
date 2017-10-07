@@ -12,7 +12,12 @@ Install extension using [composer](https://getcomposer.org):
         "atoum/telemetry-extension": "^1.0"
     }
 }
+```
 
+Or simply run the following command
+
+```shell
+composer require --dev atoum/telemetry-extension
 ```
 
 The extension will then be autoloaded by atoum, the only thing you will have to do is to configure the report.
